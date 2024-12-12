@@ -31,7 +31,7 @@ const createInvertory = async (
       },
     });
 
-    // return res.status(201).json(inventory);
+    return res.status(201).json(inventory);
   } catch (err) {
     next(err);
   }
