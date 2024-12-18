@@ -2,6 +2,8 @@ import { NextFunction, Request, Response } from "express";
 import prisma from "../prisma";
 import { InventoryUpdateDTOSchema } from "../schemas";
 
+// upcoming versions and code update next days
+
 const updatedInventory = async (
   req: Request,
   res: Response,
