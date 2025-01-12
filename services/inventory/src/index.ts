@@ -23,7 +23,7 @@ app.post("/inventories", createInventory);
 
 app.use((_req, res) => {
   res.status(404).json({
-    message: "Not Found",
+    message: "Not Found!!!",
   });
 });
 
