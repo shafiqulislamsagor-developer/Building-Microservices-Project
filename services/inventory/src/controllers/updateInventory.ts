@@ -27,6 +27,12 @@ const updateInventory = async (
       });
 
     // find the last history
+    const lastHistory = await prisma.history.findFirst({
+      where: { inventoryId: id },
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
   } catch (err) {
     next(err);
   }
